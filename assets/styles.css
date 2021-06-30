@@ -1,0 +1,37 @@
+body{
+  background-color: lightgray;
+  font-family: "Cabin Sketch", cursive;
+}
+
+footer{
+  background-color: darkgray;
+}
+
+.jumbo-bg {
+  background: url('../Images/unsplash-elena-mozhvilo.png') no-repeat center;
+  background-size: cover;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 25px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+.col-md-5 {
+  padding-bottom: 30px;
+  border: 2px black;
+}
+
+.row {
+  padding-bottom: 30px;
+  border: 2px black;
+}
+
