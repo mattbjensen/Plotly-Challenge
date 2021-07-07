@@ -89,6 +89,7 @@ var bubbleLayout = {
 function createGaugeChart(sample) {
   console.log( "sample", sample);
 
+  // d3.json("../../data/samples.json").then( data =>{
   d3.json("https://mattbjensen.github.io/Plotly-Challenge/data/samples.json").then( data =>{
 
     var objects = data.metadata;
