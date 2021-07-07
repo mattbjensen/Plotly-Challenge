@@ -2,7 +2,7 @@
 // Using 'samples.json' --> get data for names, metadata, samples
 
 function getMetadata( sample) {
-  d3.json("../../data/samples.json").then(( data) => {
+  d3.json("https://mattbjensen.github.io/Plotly-Challenge/data/samples.json").then(( data) => {
     var metadata = data.metadata;
     var resultsArray = metadata.filter( sampleObject => 
       sampleObject.id == sample);
@@ -25,7 +25,7 @@ function getMetadata( sample) {
 function createCharts( sample) {
 
 // Fetch the sample data for the plots
-d3.json("../../data/samples.json").then(( data) => {
+d3.json("https://mattbjensen.github.io/Plotly-Challenge/data/samples.json").then(( data) => {
   var samples = data.samples;
   var resultsArray = samples.filter( sampleObject => 
       sampleObject.id == sample);
@@ -89,7 +89,7 @@ var bubbleLayout = {
 function createGaugeChart(sample) {
   console.log( "sample", sample);
 
-  d3.json("../../data/samples.json").then( data =>{
+  d3.json("https://mattbjensen.github.io/Plotly-Challenge/data/samples.json").then( data =>{
 
     var objects = data.metadata;
 
@@ -184,7 +184,7 @@ function init() {
   var selector = d3.select( "#selDataset");
 
   // Use the list of sample names to populate the selection options
-  d3.json("../../data/samples.json").then(( data) => {
+  d3.json("https://mattbjensen.github.io/Plotly-Challenge/data/samples.json").then(( data) => {
     var sampleNames = data.names;
     sampleNames.forEach(( sample) => {
       selector
